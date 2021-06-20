@@ -1,0 +1,10 @@
+# python virtual environment
+bot
+# IDE settings
+.vscode
+# python cache and session files
+__pycache__
+*.pyc
+*.session
+# Deep learning models
+models
