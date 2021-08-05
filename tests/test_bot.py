@@ -1,5 +1,6 @@
 from configparser import ConfigParser
 from telethon import TelegramClient, events, sync
+import asyncio
 
 config_url="./config/config2.cfg"
 cfg=ConfigParser()
@@ -22,3 +23,5 @@ messages[0].download_media()
 @client.on(events.NewMessage(pattern='(?i)hi|hello'))
 async def handler(event):
     await event.respond('Hey!')
+    
+asyncio.run(handler())

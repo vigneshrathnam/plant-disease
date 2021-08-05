@@ -8,11 +8,12 @@ from io import BytesIO
 import requests
 from PIL import Image
 
-Model = load_model("./models/model2.h5")
+Model = load_model("./models/model.h5")
 target_size = (img_width, img_height, channel_width)
 
 
 def loadImage(url):
+    """Load the image from the Telegram's server and save it in a variable"""
     response = requests.get(url)
     img_bytes = BytesIO(response.content)
     img = Image.open(img_bytes)
@@ -23,6 +24,7 @@ def loadImage(url):
 
 
 def predict_model(url):
+    """Predict the model based Images send as an Input 128 widthx128 height"""
     img_array = []
     if url.startswith("http"):
         img_array = loadImage(url)

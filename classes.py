@@ -1,4 +1,4 @@
-unsorted_class_names = ['Apple___Apple_scab',
+class_names = ['Apple___Apple_scab',
                'Apple___Black_rot',
                'Apple___Cedar_apple_rust',
                'Apple___healthy',
@@ -36,5 +36,3 @@ unsorted_class_names = ['Apple___Apple_scab',
                'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
                'Tomato___Tomato_mosaic_virus',
                'Tomato___healthy']
-
-class_names = sorted(unsorted_class_names)
