@@ -1,10 +1,16 @@
 # python virtual environment
 bot
+
 # IDE settings
+.metadata
 .vscode
+.project
+.pydevproject
+
 # python cache and session files
 __pycache__
 *.pyc
 *.session
-# Deep learning models
+
+# Deep learning models because GitHub will not handle large files
 models
