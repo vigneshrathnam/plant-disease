@@ -4,7 +4,7 @@ bot = telegram_chatbot("./config/config.cfg")
 from classes import class_names
 
 def make_reply(msg,photo,user_msg):
-    """ Send the reply the user"""
+    """ Send reply to the user"""
     
     reply = None
     if photo is not None:
