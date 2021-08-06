@@ -60,7 +60,7 @@ while True:
             try:
                 user_msg = item["message"]["text"]
             except KeyError:
-                user_msg = None
+                user_msg = ''
             print(photo)
             try:
                 from_ = item["message"]["from"]["id"]
