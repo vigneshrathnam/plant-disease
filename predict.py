@@ -35,4 +35,4 @@ def predict_model(url):
     result = Model.predict(img_array)
     itemindex = np.where(result == np.max(result))
     plant_name,disease_name=map(lambda x: x.replace("_"," "),class_names[itemindex[1][0]].split("___"))
-    return "Name of the plane: "+plant_name+("\n Disease: "+disease_name if disease_name != healthy else disease_name)
+    return "Name of the plane: "+plant_name+("\n Disease: "+disease_name if disease_name != 'healthy' else disease_name)
